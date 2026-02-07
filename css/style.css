@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: plus-jakarta-sans, sans-serif;
+}
+
+:root{
+    --corAmarela: #fbca2d;
+    --corAzul: #17043b;
+    --corBanca: #ffffff
+}
+body {
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--corBanca);
+    color: var(--corBanca);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font: bold 16px/1.5 'Montserrat', sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--corAmarela);
+    color: var(--corAzul);
+    transition: 0.5s;
+}
+.meu-header {
+    background-color: var(--corAmarela); /* Amarelo aproximado da imagem */
+    display: flex;
+    justify-content: space-between; /* Separa logo do menu */
+    align-items: center;
+    padding: 0 20px;
+    height: 70px; /* Altura reduzida para ficar elegante */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Agrupador da Logo + Nome */
+.container-logo-nome {
+    display: flex;
+    align-items: center; /* Alinha a letra com o bloco de texto */
+    justify-content: space-between;
+}
+
+/* Estilo da Imagem da Logo */
+.logo-img {
+    height: 50px; /* Ajuste conforme necessário */
+    background-color: white;
+    border-radius: 8px; /* Cantos arredondados como na foto */
+    padding: 5px;
+    margin-right: 12px;
+}
+
+/* Container que empilha os nomes */
+.nome-bloco {
+    display: flex;
+    flex-direction: column; /* Um em cima do outro */
+    line-height: 1.1; /* Diminui o espaço vertical entre André e Marçal */
+}
+
+.primeiro-nome {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2E2A4E; /* Cor escura da imagem */
+}
+
+.segundo-nome {
+    font-weight: bold;
+    font-size: 17px;
+    color: #2E2A4E;
+}
+
+/* Estilo básico para os links do menu à direita */
+.menu-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 56px;;
+}
+
+header .menu-nav a {
+    color: var(--corBanca);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+header .menu-nav a:hover {
+    color: var(--corAmarela);
+    transition: color 0.3s ease;
+}
+
+header .menu-nav .button {
+    width: 144px;
+    height: 48px;
+    
+}
