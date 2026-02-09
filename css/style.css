@@ -6,7 +6,7 @@
 }
 
 :root{
-    --corAmarela: #fbca2d;
+    --corAmarela: #d4a60d;
     --corAzul: #17043b;
     --corBanca: #ffffff
 }
@@ -84,6 +84,18 @@ button:hover {
     gap: 56px;;
 }
 
+.meu-header{
+    background-color: transparent;
+    padding: 16px 0;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+
 header .menu-nav a {
     color: var(--corBanca);
     text-decoration: none;
@@ -101,3 +113,47 @@ header .menu-nav .button {
     height: 48px;
     
 }
+
+/*estilizando a hero*/
+section.hero {
+    background-image: linear-gradient(to left, var(--corAzul) 70%, var(--corAmarela) 30%);
+}
+
+.hero .interface{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero .img-hero {
+    line-height: 0;
+    
+}   
+
+.hero .txt-hero h1 {
+    font-size: 3rem;
+    color: var(--corBanca);
+    font-weight: 300;
+
+}
+
+.hero .txt-hero h1 span{
+    color: var(--corAmarela);
+    display: block;
+    font-weight: 800px;
+    font-size: 4rem;
+    font-size: 4rem;
+}
+
+.hero .txt-hero p {
+    color: var(--corBanca);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin-top: 24px 0;
+}
+    
+.hero .txt-hero button {
+    height: 40px;
+    width: 200px;
+}   
+    
