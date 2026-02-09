@@ -95,7 +95,7 @@ header .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
+}
 
 
 header .menu-nav a {
@@ -112,8 +112,7 @@ header .menu-nav a:hover {
 
 header .menu-nav .button {
     width: 144px;
-    height: 48px;
-    
+    height: 48px; 
 }
 
 /*estilizando a hero*/
