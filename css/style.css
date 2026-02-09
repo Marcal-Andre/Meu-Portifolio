@@ -11,6 +11,7 @@
     --corBanca: #ffffff
 }
 body {
+
 }
 
 button {
@@ -21,7 +22,7 @@ button {
     cursor: pointer;
     font-size: 1rem;
     font: bold 16px/1.5 'Montserrat', sans-serif;
-        transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
@@ -97,7 +98,6 @@ header .interface{
     justify-content: space-between;
 }
 
-
 header .menu-nav a {
     color: var(--corBanca);
     text-decoration: none;
@@ -129,14 +129,12 @@ section.hero {
 
 .hero .img-hero {
     line-height: 0;
-    
 }   
 
 .hero .txt-hero h1 {
     font-size: 3rem;
     color: var(--corBanca);
     font-weight: 300;
-
 }
 
 .hero .txt-hero h1 span{
