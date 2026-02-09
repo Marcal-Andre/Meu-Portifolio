@@ -87,6 +87,8 @@ button:hover {
 .meu-header{
     background-color: transparent;
     padding: 16px 0;
+    position: fixed;
+    width: 100%;
 }
 
 header .interface{
@@ -117,6 +119,7 @@ header .menu-nav .button {
 /*estilizando a hero*/
 section.hero {
     background-image: linear-gradient(to left, var(--corAzul) 70%, var(--corAmarela) 30%);
+    padding-top: 144px;
 }
 
 .hero .interface{
