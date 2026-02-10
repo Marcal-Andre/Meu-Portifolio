@@ -9,6 +9,7 @@
     --corAmarela: #d4a60d;
     --corAzul: #17043b;
     --corBanca: #ffffff
+
 }
 body {
 
@@ -115,7 +116,7 @@ header .menu-nav a {
     transition: 0.5s;
 }
 
-header .menu-nav a:hover {
+.header .menu-nav a:hover {
     color: var(--corAmarela);
     transition: color 0.3s ease;
 }
@@ -166,4 +167,14 @@ section.hero {
     height: 40px;
     width: 200px;
 }   
-    
+
+.sobre-mim{
+    padding: 80px 0;
+}
+
+.sobre-mim .interface {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+
+}
