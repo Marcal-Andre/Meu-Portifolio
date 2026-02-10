@@ -30,6 +30,16 @@ button:hover {
     color: var(--corAzul);
     transition: 0.5s;
 }
+
+h1.titulo-section{
+    font-size: 4rem;
+    color: var(--corBanca);
+}
+
+h1.titulo-section span{
+    color: var(--corAmarela);
+}
+
 .meu-header {
     background-color: var(--corAmarela); /* Amarelo aproximado da imagem */
     display: flex;
@@ -121,7 +131,7 @@ section.hero {
     padding-top: 144px;
 }
 
-.hero .interface{
+.hero .interface {
     display: flex;
     align-items: center;
     gap: 120px;
