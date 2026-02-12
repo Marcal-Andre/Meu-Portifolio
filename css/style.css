@@ -8,12 +8,14 @@
 :root{
     --corAmarela: #d4a60d;
     --corAzul: #17043b;
-    --corBanca: #ffffff
+    --corBanca: #ffffff;
+    --corAzulEscuro: #090117;
 
 }
 body {
-
+    background-color: var(--corAzulEscuro);
 }
+
 
 button {
     background-color: transparent;
@@ -116,7 +118,7 @@ header .menu-nav a {
     transition: 0.5s;
 }
 
-.header .menu-nav a:hover {
+header .menu-nav a:hover {
     color: var(--corAmarela);
     transition: color 0.3s ease;
 }
@@ -138,7 +140,7 @@ section.hero {
     gap: 120px;
 }
 
-.hero .img-hero {
+.hero .img-hero { 
     line-height: 0;
 }   
 
@@ -168,13 +170,22 @@ section.hero {
     width: 200px;
 }   
 
+section.sobre-mim {
+    background-image: linear-gradient(to left,  var(--corAmarela) 30%, var(--corAzul) 70%);
+    padding-top: 144px;
+}
 .sobre-mim{
     padding: 80px 0;
 }
 
-.sobre-mim .interface {
+.sobre-mim > .interface {
     display: flex;
     align-items: center;
-    gap: 120px;
-
+    gap: 120px
+}
+    
+.sobre-mim img {
+    width: 550px;
+    height: 550px;
+    border-radius: 8px;
 }
