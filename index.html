@@ -1,91 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="meu-header">
-      <div class="container-logo-nome">
-        <img src="img/minha-logo.png" alt="Logo A" class="logo-img" />
-
-        <div class="nome-bloco">
-          <span class="primeiro-nome">André</span>
-          <span class="segundo-nome">Marçal</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Marçal · Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header class="meu-header" id="mainHeader">
+        <div class="container-logo-nome">
+            <div class="logo-img"></div>
+            <div class="nome-bloco">
+                <span class="primeiro-nome">ANDRÉ</span>
+                <span class="segundo-nome">MARÇAL</span>
+            </div>
         </div>
-      </div>
-
-      <nav class="menu-nav">
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre mim</a></li>
-          <li><a href="#">Habilidades</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li>
-            <a href="#"><button>Contato</button></a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato"><button>Contato</button></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="interface">
-          <div class="img-hero">
-            <img src="img/img-hero.png" alt="foto do proficional" />
-          </div>
-
-          <div class="txt-hero">
-            <h1>Ideias Digitais. <span>Resultados Reais!</span></h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              rerum eaque voluptates pariatur dolores, unde inventore. Quos,
-              laborum maxime? Nihil voluptatem quos ratione deserunt quam
-              aliquid tempora reiciendis ducimus perferendis.
-            </p>
-            <a href="#contato"><button>Entre em contato</button></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="sobre-mim">
-        <div class="interface">
-          <div class="txt-sobre">
-            <h1 class="titulo-section">Sobre <span>mim</span></h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
-              assumenda distinctio culpa a, accusantium enim praesentium
-              exercitationem ducimus id asperiores cum et minus velit dolor,
-              quam voluptatem ipsa quo maiores
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis id enim officia voluptates perspiciatis quis fugit
-              reiciendis fuga aliquam reprehenderit cumque, quo possimus sunt,
-              omnis voluptatibus molestias dicta cum ut!
-            </p>
-
-            <div class="btn-redes">
-              <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-              <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-              <a href="#"><button><i class="bi bi-github"></i></button></a>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="interface">
+                <div class="img-hero">
+                    <img src="" alt="">
+                </div>
+                <div class="txt-hero">
+                    <h1>Ideias Digitais. <span>Resultados Reais!</span></h1>
+                    <div class="hero-descricao">
+                        <i class="bi bi-rocket-takeoff-fill"></i> A ponte entre o seu projeto no papel e o sucesso na tela. 🚀<br>
+                        Criamos soluções em desenvolvimento web e estratégia digital, focadas em transformar ideias ousadas em experiências que vendem e fidelizam. Vamos tirar sua ideia do papel?
+                    </div>
+                    <a href="https://wa.me/5585996485562" target="_blank" class="btn-whatsapp-hero">
+                        Desenvolvimento Web
+                    </a>
+                </div>
             </div>
+        </section>
 
-          </div>
-
-            <div class="img-sobre">
-              <img src="img/img.sobre-mim.png" alt="foto do profissional" />
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="sobre-mim">
+            <div class="interface">
+                <div class="txt-sobre">
+                    <h1 class="titulo-section">Sobre <span>mim</span></h1>
+                    <p>Olá! Meu nome é André O. Marçal, sou apaixonado por tecnologia e estou vivendo um momento decisivo na minha trajetória. Atualmente, trabalho como Porteiro Condominial, mas estou em plena transição de carreira para o mundo do desenvolvimento web.</p>
+                    <p>Estou cursando o último semestre de Análise e Desenvolvimento de Sistemas (ADS), onde venho consolidando minha base técnica. Meu objetivo principal é me tornar um Desenvolvedor Web Full Stack. Para isso, foco meus estudos atuais no ecossistema Front-End, dominando tecnologias como React e Tailwind CSS, além de aplicar princípios de UX/UI através do Figma para criar interfaces modernas e funcionais.</p>
+                    <p>Além da faculdade, sou um autodidata constante, acompanhando cursos especializados e videoaulas para me manter atualizado. Estou pronto para levar minha disciplina e dedicação do dia a dia para o meu primeiro desafio técnico na área de programação!</p>
+                </div>
+                <div class="img-sobre">
+                    <img src="img/img.sobre-mim.png" alt="André Marçal perfil">
+                </div>
             </div>
+        </section>
 
-        </div>
-      </section>
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="habilidades">
+            <div class="interface">
+                <div class="skills-left">
+                    <h2><span>Habilidades</span> & stacks</h2>
+                    <div class="skills-stair">
+                        <div class="skill-card-stair" data-skill-index="0">
+                            <i class="bi bi-code-slash"></i>
+                            <div class="skill-info">
+                                <h3>Front-end</h3>
+                                <p>React, Next, Vue, Tailwind, TS</p>
+                            </div>
+                        </div>
+                        <div class="skill-card-stair" data-skill-index="1">
+                            <i class="bi bi-server"></i>
+                            <div class="skill-info">
+                                <h3>Back-end</h3>
+                                <p>Node, PHP, MySQL, Firebase</p>
+                            </div>
+                        </div>
+                        <div class="skill-card-stair" data-skill-index="2">
+                            <i class="bi bi-palette"></i>
+                            <div class="skill-info">
+                                <h3>UI/UX Design</h3>
+                                <p>Figma, Prototipagem, Design System</p>
+                            </div>
+                        </div>
+                        <div class="skill-card-stair" data-skill-index="3">
+                            <i class="bi bi-tools"></i>
+                            <div class="skill-info">
+                                <h3>Ferramentas</h3>
+                                <p>Git, Figma, Vercel, WP</p>
+                            </div>
+                        </div>
+                        <div class="skill-card-stair" data-skill-index="4">
+                            <i class="bi bi-phone"></i>
+                            <div class="skill-info">
+                                <h3>Responsivo</h3>
+                                <p>Mobile first, flex/grid</p>
+                            </div>
+                        </div>
+                        <div class="skill-card-stair" data-skill-index="5">
+                            <i class="bi bi-rocket"></i>
+                            <div class="skill-info">
+                                <h3>Performance</h3>
+                                <p>Lighthouse, otimização</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="globo-container">
+                    <div style="position: relative;">
+                        <div class="globo-realista">
+                            <div class="globo-inner">🌍</div>
+                        </div>
+                        <div class="constelacao">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                            <i class="bi bi-filetype-js"></i>
+                            <i class="bi bi-filetype-tsx"></i>
+                            <i class="bi bi-filetype-py"></i>
+                            <i class="bi bi-filetype-php"></i>
+                            <i class="bi bi-git"></i>
+                            <i class="bi bi-database"></i>
+                            <i class="bi bi-cloud"></i>
+                            <i class="bi bi-cpu"></i>
+                            <i class="bi bi-braces"></i>
+                            <i class="bi bi-code"></i>
+                        </div>
+                        <div class="constelacao2">
+                            <i class="bi bi-filetype-java"></i>
+                            <i class="bi bi-filetype-sql"></i>
+                            <i class="bi bi-filetype-sass"></i>
+                            <i class="bi bi-wordpress"></i>
+                            <i class="bi bi-npm"></i>
+                            <i class="bi bi-github"></i>
+                            <i class="bi bi-filetype-json"></i>
+                            <i class="bi bi-stack"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="projetos">
+            <div class="interface">
+                <h2><span>Projetos</span> · Desenvolvimento Web</h2>
+                <div class="cards-projetos">
+                    <div class="card-projeto">
+                        <div class="projeto-img img1"></div>
+                        <div class="card-conteudo">
+                            <h3>Fintech PRO</h3>
+                            <p>Landing page para startup de crédito. Design moderno e alta conversão.</p>
+                            <a href="#" class="btn-projeto" target="_blank">Ver projeto</a>
+                        </div>
+                    </div>
+                    <div class="card-projeto">
+                        <div class="projeto-img img2"></div>
+                        <div class="card-conteudo">
+                            <h3>Organic Farm</h3>
+                            <p>Site institucional para fazenda orgânica. Storytelling e apelo visual.</p>
+                            <a href="#" class="btn-projeto" target="_blank">Ver projeto</a>
+                        </div>
+                    </div>
+                    <div class="card-projeto">
+                        <div class="projeto-img img3"></div>
+                        <div class="card-conteudo">
+                            <h3>E-Shop Urban</h3>
+                            <p>E-commerce de moda urbana. Carrinho e checkout otimizado.</p>
+                            <a href="#" class="btn-projeto" target="_blank">Ver projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 70px;"><span>Design</span> · Interfaces no Figma</h2>
+                <div class="cards-projetos">
+                    <div class="card-projeto">
+                        <div class="projeto-img img4">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card-conteudo">
+                            <h3>App Fintech</h3>
+                            <p>Design de aplicativo financeiro com foco em experiência do usuário.</p>
+                            <a href="#" class="btn-projeto" target="_blank">Ver design</a>
+                        </div>
+                    </div>
+                    <div class="card-projeto">
+                        <div class="projeto-img img5"></div>
+                        <div class="card-conteudo">
+                            <h3>Dashboard Analytics</h3>
+                            <p>Painel administrativo com gráficos e métricas em tempo real.</p>
+                            <a href="#" class="btn-projeto" target="_blank">Ver design</a>
+                        </div>
+                    </div>
+                    <div class="card-projeto">
+                        <div class="projeto-img img6"></div>
+                        <div class="card-conteudo">
+                            <h3>Landing Page UI</h3>
+                            <p>Conceito de landing page para startup de tecnologia.</p>
+                            <a href="#" class="btn-projeto" target="_blank">Ver design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER PROFISSIONAL -->
+        <footer class="footer-profissional" id="contato">
+            <div class="interface">
+                <div class="frases-container">
+                    <div class="frase-destaque">
+                        <i class="bi bi-lightbulb-fill"></i> Sua ideia merece o palco digital.
+                    </div>
+                    <div class="frase-secundaria">
+                        Vamos construir juntos o próximo grande projeto.
+                    </div>
+                </div>
+                
+                <div class="contato-redes-container">
+                    <div class="contato-chamada">
+                        <i class="bi bi-chat-dots-fill"></i> Entra em contato
+                    </div>
+                    <div class="contato-descricao">
+                        Vamos conversar e tirar sua ideia do papel!
+                    </div>
+                    <div class="social-icons-footer">
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/5585996485562" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
