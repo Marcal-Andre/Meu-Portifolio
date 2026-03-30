@@ -153,6 +153,10 @@ section.hero .interface {
 
 /* SOBRE MIM */
 section.sobre-mim {
+    display: flex;
+    padding-top: 80px;
+    width: 100%;
+    align-items: center;
     padding: 100px 4%;
     background-color: var(--bg-light);
 }
@@ -230,6 +234,71 @@ section.habilidades .interface {
     animation: float 4s ease-in-out infinite;
 }
 
+.globo-container {
+    position: relative;
+    text-align: center;
+    font-size: 8rem;
+    animation: float 4s ease-in-out infinite;
+}
+
+.globo-realista {
+    position: relative;
+    z-index: 1;
+}
+
+.globo-inner {
+    display: inline-block;
+    font-size: 4rem;
+    animation: rotate 10s infinite linear; /* Animação de rotação do globo */
+}
+
+.icons-constelacao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%; /* Ajuste a largura conforme necessário */
+    height: 200%; /* Ajuste a altura conforme necessário */
+    transform: translate(-50%, -50%);
+    animation: orbit 10s infinite linear; /* Animação de órbita dos ícones */
+}
+
+.icons-constelacao i {
+    position: absolute;
+    color: var(--primary-color); /* Cor dos ícones */
+    font-size: 2rem;
+}
+
+/* Definindo a órbita dos ícones em volta do globo */
+.icons-constelacao i:nth-child(1) { transform: rotate(0deg) translate(120px) rotate(0deg); }
+.icons-constelacao i:nth-child(2) { transform: rotate(30deg) translate(120px) rotate(-30deg); }
+.icons-constelacao i:nth-child(3) { transform: rotate(60deg) translate(120px) rotate(-60deg); }
+.icons-constelacao i:nth-child(4) { transform: rotate(90deg) translate(120px) rotate(-90deg); }
+.icons-constelacao i:nth-child(5) { transform: rotate(120deg) translate(120px) rotate(-120deg); }
+.icons-constelacao i:nth-child(6) { transform: rotate(150deg) translate(120px) rotate(-150deg); }
+.icons-constelacao i:nth-child(7) { transform: rotate(180deg) translate(120px) rotate(-180deg); }
+.icons-constelacao i:nth-child(8) { transform: rotate(210deg) translate(120px) rotate(-210deg); }
+.icons-constelacao i:nth-child(9) { transform: rotate(240deg) translate(120px) rotate(-240deg); }
+.icons-constelacao i:nth-child(10) { transform: rotate(270deg) translate(120px) rotate(-270deg); }
+.icons-constelacao i:nth-child(11) { transform: rotate(300deg) translate(120px) rotate(-300deg); }
+.icons-constelacao i:nth-child(12) { transform: rotate(330deg) translate(120px) rotate(-330deg); }
+
+/* Animações */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes orbit {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
@@ -292,4 +361,79 @@ section.projetos h2 {
 
 .card-conteudo p {
     color: var(--text-gray);
-    font
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* FOOTER PROFISSIONAL */
+.footer-profissional {
+    background-color: var(--bg-light);
+    color: var(--text-white);
+    padding: 40px 4%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.frases-container {
+    margin-bottom: 20px;
+}
+
+.frase-destaque {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.frase-secundaria {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+
+.contato-redes-container {
+    margin-top: 30px;
+}
+
+.contato-chamada {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.contato-descricao {
+    margin-bottom: 20px;
+    color: var(--text-gray);
+}
+
+.social-icons-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.social-icons-footer a {
+    color: var(--text-white);
+    transition: color 0.3s;
+}
+
+.social-icons-footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Adicionando um efeito de fundo animado */
+.footer-profissional::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 223, 154, 0.1);
+    z-index: -1;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.footer-profissional:hover::before {
+    opacity: 0.8;
+}
