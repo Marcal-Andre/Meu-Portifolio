@@ -1,10 +1,5 @@
 /* CONFIGURAÇÕES GERAIS */
-.orbitron-<uniquifier> {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+
 
 :root {
     --primary-color: #00df9a; /* Cor de destaque (Verde Tech) */
