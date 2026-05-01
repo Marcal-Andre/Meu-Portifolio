@@ -253,7 +253,7 @@ section.habilidades .interface {
 
 .globo-inner {
     display: inline-block;
-    font-size: 4rem;
+    font-size: 7rem;
     animation: rotate 10s infinite linear; /* Animação de rotação do globo */
 }
 
