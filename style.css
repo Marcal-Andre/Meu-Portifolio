@@ -8,6 +8,7 @@
     --text-white: #ffffff;
     --text-gray: #a5a5a5;
     --font-main: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 * {
@@ -16,6 +17,10 @@
     box-sizing: border-box;
     font-family: var(--font-main);
     scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -71,6 +76,7 @@ header {
 
 .nome-bloco .primeiro-nome {
     color: var(--primary-color);
+    font-size: 1.4rem;
 }
 .nome-bloco .segundo-nome {
     color: var(--text-white);
