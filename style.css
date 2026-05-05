@@ -448,3 +448,155 @@ section.projetos h2 {
 .footer-profissional:hover::before {
     opacity: 0.8;
 }
+
+/* RESPONSIVIDADE */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .txt-hero h1 {
+        font-size: 3rem;
+    }
+
+    .img-hero img {
+        width: 350px;
+    }
+
+    .img-sobre img {
+        width: 300px;
+    }
+
+    .titulo-section {
+        font-size: 2.2rem;
+    }
+
+    .globo-container {
+        font-size: 6rem;
+    }
+
+    .globo-inner {
+        font-size: 5rem;
+    }
+
+    .icons-constelacao i {
+        font-size: 1.8rem;
+    }
+
+    .icons-constelacao i:nth-child(n) {
+        transform: rotate(var(--angle)) translate(100px) rotate(calc(var(--angle) * -1));
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .interface {
+        padding: 0 6%;
+    }
+
+    header {
+        padding: 20px 6%;
+    }
+
+    .menu-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        position: static;
+        background: transparent;
+        padding: 0;
+    }
+
+    .menu-nav a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu-nav button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    section.hero .interface {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .txt-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-descricao {
+        font-size: 1rem;
+    }
+
+    .img-hero img {
+        width: 250px;
+    }
+
+    section.sobre-mim .interface {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .img-sobre img {
+        width: 250px;
+    }
+
+    .titulo-section {
+        font-size: 2rem;
+    }
+
+    section.habilidades .interface {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .skill-card-stair {
+        width: 100%;
+    }
+
+    .globo-container {
+        font-size: 5rem;
+    }
+
+    .globo-inner {
+        font-size: 4rem;
+    }
+
+    .icons-constelacao i {
+        font-size: 1.5rem;
+    }
+
+    .icons-constelacao i:nth-child(n) {
+        transform: rotate(var(--angle)) translate(80px) rotate(calc(var(--angle) * -1));
+    }
+
+    section.projetos h2 {
+        font-size: 2rem;
+    }
+
+    .cards-projetos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-conteudo {
+        padding: 20px;
+    }
+
+    .social-icons-footer {
+        gap: 15px;
+        font-size: 1.5rem;
+    }
+
+    .frase-destaque {
+        font-size: 1.3rem;
+    }
+
+    .frase-secundaria {
+        font-size: 1rem;
+    }
+
+    .contato-chamada {
+        font-size: 1.2rem;
+    }
+}
