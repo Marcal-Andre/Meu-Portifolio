@@ -57,7 +57,6 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.9);
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
@@ -129,7 +128,7 @@ section.hero .interface {
 }
 
 .txt-hero h1 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     line-height: 1.1;
     margin-bottom: 20px;
 }
@@ -493,28 +492,35 @@ section.projetos h2 {
     }
 
     header {
-        padding: 20px 6%;
+        padding: 15px 6%;
+        background-color: rgba (10, 10, 10, 0.95;
+        backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(0, 223, 154, 0.2);
+        flex-direction: row;
     }
 
     .menu-nav ul {
+        display: flex;
         flex-direction: column;
+        align-items: flex-end;
         gap: 15px;
         position: static;
-        background: transparent;
         padding: 0;
     }
 
     .menu-nav a {
         display: block;
-        padding: 10px 0;
+        padding: 5px 0;
+        padding: 0.9rem;
     }
 
-    .menu-nav button {
-        margin-top: 10px;
-        width: 100%;
+    .menu-nav .button {
+        margin-top: 5px;
+        padding: 8px 15px;
+        width: auto
     }
+    .section.hero .interface {
 
-    section.hero .interface {
         flex-direction: column;
         text-align: center;
         gap: 30px;
@@ -532,7 +538,7 @@ section.projetos h2 {
         width: 250px;
     }
 
-    section.sobre-mim .interface {
+    .section.sobre-mim .interface {
         flex-direction: column;
         gap: 40px;
     }
