@@ -115,7 +115,7 @@ header {
 /* HERO */
 section.hero {
     height: 100vh;
-    display: flex;
+      display: flex;
     align-items: center;
     padding-top: 80px;
 }
@@ -156,7 +156,8 @@ section.hero .interface {
 }
 
 .img-hero img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Forma orgânica */
     background: var(--primary-color);
 }
@@ -178,7 +179,8 @@ section.sobre-mim .interface {
 }
 
 .img-sobre img {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 20px;
     filter: grayscale(1);
     transition: 0.5s;
@@ -492,38 +494,76 @@ section.projetos h2 {
     }
 
     header {
-        padding: 15px 6%;
-        background-color: rgba (10, 10, 10, 0.95;
+        padding: 8px 12px;
+        background-color: rgba(10, 10, 10, 0.95);
         backdrop-filter: blur(15px);
         border-bottom: 1px solid rgba(0, 223, 154, 0.2);
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        min-height: 0;
+    }
+
+    .container-logo-nome {
+        gap: 6px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nome-bloco {
+        font-size: 1rem;
+        text-align: center;
+        display: block;
+    }
+
+    .menu-nav {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .menu-nav ul {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 15px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
         position: static;
         padding: 0;
+        width: auto;
+        margin: -2px 0 0 0; /* move os links 2px para cima */
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     .menu-nav a {
-        display: block;
-        padding: 5px 0;
-        padding: 0.9rem;
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.2rem 0.35rem;
+        width: auto;
     }
 
-    .menu-nav .button {
-        margin-top: 5px;
-        padding: 8px 15px;
-        width: auto
+    .menu-nav button {
+        width: auto;
+        padding: 6px 10px;
+        font-size: 0.75rem;
     }
-    .section.hero .interface {
 
+    section.hero {
+        padding-top: 90px;
+    }
+
+    section.hero .interface {
         flex-direction: column;
         text-align: center;
         gap: 30px;
+        align-items: center;
     }
 
     .txt-hero h1 {
@@ -532,19 +572,29 @@ section.projetos h2 {
 
     .hero-descricao {
         font-size: 1rem;
+        max-width: 100%;
     }
 
     .img-hero img {
-        width: 250px;
+        width: 100%;
+        max-width: 250px;
     }
 
-    .section.sobre-mim .interface {
+    section.sobre-mim .interface {
         flex-direction: column;
         gap: 40px;
+        align-items: center;
+        text-align: center;
     }
 
     .img-sobre img {
-        width: 250px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    section.sobre-mim .txt-sobre,
+    .img-sobre {
+        width: 100%;
     }
 
     .titulo-section {
@@ -568,12 +618,16 @@ section.projetos h2 {
         font-size: 4rem;
     }
 
-    .icons-constelacao i {
-        font-size: 1.5rem;
+    .constelacao,
+    .constelacao2 {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
-    .icons-constelacao i:nth-child(n) {
-        transform: rotate(var(--angle)) translate(80px) rotate(calc(var(--angle) * -1));
+    .constelacao i,
+    .constelacao2 i {
+        font-size: 1.5rem;
     }
 
     section.projetos h2 {
