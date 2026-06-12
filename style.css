@@ -8,6 +8,7 @@
     --text-white: #ffffff;
     --text-gray: #a5a5a5;
     --font-main: 'Montserrat', sans-serif;
+    --header-offset: 80px; /* distância reservada para o header fixo */
     box-sizing: border-box;
 }
 
@@ -117,7 +118,8 @@ section.hero {
     height: 100vh;
       display: flex;
     align-items: center;
-    padding-top: 80px;
+        /* evita que o header fixo cubra o conteúdo: usa variável ajustável */
+        padding-top: calc(var(--header-offset) + 20px);
 }
 
 section.hero .interface {
@@ -489,19 +491,22 @@ section.projetos h2 {
 
 /* Mobile */
 @media (max-width: 768px) {
+    :root {
+        --header-offset: 120px; /* header reduzido em mobile com mais espaço */
+    }
     .interface {
         padding: 0 6%;
     }
 
     header {
-        padding: 8px 12px;
+        padding: 6px 10px;
         background-color: rgba(10, 10, 10, 0.95);
         backdrop-filter: blur(15px);
         border-bottom: 1px solid rgba(0, 223, 154, 0.2);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 6px;
+        gap: 4px;
         min-height: 0;
     }
 
@@ -532,7 +537,7 @@ section.projetos h2 {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 5px;
         position: static;
         padding: 0;
         width: auto;
@@ -543,20 +548,24 @@ section.projetos h2 {
 
     .menu-nav a {
         display: inline-block;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         font-weight: 500;
-        padding: 0.2rem 0.35rem;
+        padding: 0.15rem 0.3rem;
         width: auto;
     }
 
     .menu-nav button {
         width: auto;
-        padding: 6px 10px;
-        font-size: 0.75rem;
+        padding: 5px 8px;
+        font-size: 0.72rem;
     }
 
     section.hero {
-        padding-top: 90px;
+        padding-top: calc(var(--header-offset) + 28px);
+    }
+
+    .img-hero {
+        margin-top: 16px;
     }
 
     section.hero .interface {
